@@ -1,0 +1,91 @@
+* {
+  transition: all 0.1s ease-in;
+}
+
+body {
+  font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+  background-color: #3b3f45;
+  color: #f9f9f9;
+  font-size: 25px;
+  border: solid 20px;
+}
+
+header {
+  background-color: #4a4f56;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #eb7e7f;
+  font-size: 35px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+header p {
+  color: #eb7e7f;
+}
+
+div {
+  width: 60%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.list {
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.list li {
+  background-color: #88839e;
+  border: solid transparent;
+  padding: 5px 0 5px 0;
+}
+
+.list li:nth-child(2n) {
+  background-color: #7a7593;
+}
+
+.list li:hover {
+  background-color: #5f6174;
+  border-color: white;
+}
+
+.list li:active {
+  background-color: #eb7e7f;
+}
+
+.list input {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  color: #b1b1b1;
+}
+
+small {
+  font-size: 15px;
+  color: #b1b1b1;
+}
+
+small:before {
+  content: "(";
+}
+
+small::after {
+  content: ")";
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4a4f56;
+  color: #eb7e7f;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+  border: none;
+}

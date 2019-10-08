@@ -4,37 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Zadanie1</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Shopping list</title>
   </head>
   <body>
-    <main>
+    <header>
       <h1>CSS Dinner Shopping list</h1>
       <p>Let's go to the mall!</p>
-      <form action="">
-        <fieldset>
-          <ul>
+    </header>
+    <main>
+      <div>
+        <form action="">
+          <ul class="list">
             <li>
               <input type="checkbox" name="list" id="pickles" />
               <label for="pickles">
-                A lot of pickles (for the next lessons about CSS)
+                A lot of pickles <small>for the next lessons about CSS</small>
               </label>
             </li>
             <li>
-              <input checked type="checkbox" name="list" id="apples" />
+              <input type="checkbox" name="list" id="apples" />
               <label for="apples">
-                <s>10 apples</s> (for more CSS manipulations)
+                10 apples <small>for more CSS manipulations</small>
               </label>
             </li>
             <li>
               <input type="checkbox" name="list" id="oranges" />
               <label for="oranges">
-                20 oranges (because they are awesome)
+                20 oranges <small>because they are awesome</small>
               </label>
             </li>
             <li>
               <input type="checkbox" name="list" id="plates" />
               <label for="plates">
-                13 plates
+                13 plates <small>hm... they always disappear</small>
               </label>
             </li>
             <li>
@@ -46,13 +51,13 @@
             <li>
               <input type="checkbox" name="list" id="sake" />
               <label for="sake">
-                1 bottle of Sake ^_^ (for my friends)
+                1 bottle of Sake ^_^ <small>for my friends</small>
               </label>
             </li>
           </ul>
-        </fieldset>
-        <input type="submit" value="Bon appetit :)" />
-      </form>
+          <input type="submit" value="Bon appetit :)" />
+        </form>
+      </div>
     </main>
   </body>
 </html>
